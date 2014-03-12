@@ -8,7 +8,7 @@ gem 'mysql', '2.8.1'
 
 
 group :development do
-     gem 'sqlite3', '1.3.5'
+     gem 'sqlite3'
      gem 'pry'
      gem 'puma'
 end
