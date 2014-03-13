@@ -1,0 +1,22 @@
+<div id="wos_wrapper">
+	<div id="container">
+		<div id="info">
+			<h1>Work Order System</h1>
+			<p>Please feel free to reach out, we'd love to hear from you.</p>
+
+			<%= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do %>
+			      <div class="label">First Name:</div>
+			      <%= text_field_tag :first_name, '', :class=>  "field", :name => "user[first_name]"%><br>
+			      <div class="label">Last Name:</div>
+			      <%= text_field_tag :last_name, '', :class=>  "field", :name => "user[last_name]"%><br>
+			      <div class="label">Email Address:</div>
+			      <%= email_field_tag :email_address, '', :class=>  "field", :name => "user[email_address]"%><br>
+			      <div class="label">How can I help you?</div>
+			      <%= text_area_tag :notes, '', :name => "user[notes]"%><br>
+			      <%= submit_tag "Submit", :id => "submit_form_button" %>
+			<% end %>
+		</div>
+		<div id="safety"></div>
+		<div class="clear"></div>
+	</div>	
+</div>

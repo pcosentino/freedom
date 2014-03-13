@@ -1,7 +1,8 @@
 Freedom::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  
+  post "/send_email" => "pages#send_email" 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
@@ -13,7 +14,15 @@ Freedom::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-root :to => 'pages#index'
+  root :to => 'pages#index'
+  get 'pages/index'
+  get 'pages/about'
+  get 'pages/portfolio'
+  get 'pages/services'
+  get 'pages/team'
+  get 'pages/wos'
+  get 'pages/login'
+
   # Example resource route with options:
   #   resources :products do
   #     member do

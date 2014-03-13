@@ -1,0 +1,14 @@
+<div id="login_wrapper">
+  <div id="container">
+	   <div id="login_form">
+	   		<h1>Login</h1>
+				<%= form_tag do %>
+				<div class="label">Login (Email Address)</div>
+				<%= email_field_tag :email_address, '', :class=>  "field", :name => "user[email_address]"%><br>
+				<div class="label">Password <a id="forgot" href="#">Forgot Password</a></div>
+				<%= password_field_tag :password, '', :class=>  "field", :name => "user[password]"%><br>
+				<%= submit_tag "Login", :id => "login_button" %>
+			<% end %>
+	   </div>
+	</div>
+</div>
