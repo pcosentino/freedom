@@ -16,12 +16,13 @@ Freedom::Application.routes.draw do
   #   resources :products
   root :to => 'pages#index'
   get 'pages/index'
-  get 'pages/about'
-  get 'pages/portfolio'
-  get 'pages/services'
-  get 'pages/team'
-  get 'pages/wos'
-  get 'pages/login'
+  get 'pages/heating'
+  get 'pages/air'
+  get 'pages/repair'
+  get 'pages/discounts'
+  get 'pages/testimonials'
+  get 'pages/warranties'
+  get 'pages/contact'
 
   # Example resource route with options:
   #   resources :products do

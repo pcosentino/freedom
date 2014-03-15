@@ -3,24 +3,26 @@ class PagesController < ApplicationController
 	def index
 	end
 
-	def about
+	def heating
 	end
 
-	def portfolio
+	def air
 	end
 
-	def services
+	def repair
 	end
 
-	def team
+	def discounts
 	end
 
-	def wos
+	def testimonials
 	end
 
-	def login
+	def warranties
 	end
 
+	def contact
+	end
 
  	def send_email
       user_name =  "#{params[:user][:first_name]} #{params[:user][:last_name]}"
