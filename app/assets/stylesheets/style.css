@@ -39,26 +39,41 @@ img{
 	margin: 0 auto;
 	background: #fff ;
 }
+#header #call{
+  float: left;
+  margin: 42px 75px;
+  text-align: center;
+  width: 250px;
+}
+#header h1{
+	border: none;
+}
 #home_wrapper, #heating_wrapper, #air_wrapper, #repair_wrapper, #testimonials_wrapper{
 	width: 1000px;
 	margin: 0 auto;
 }
 /************NAVIGATION*************/
 #navigation{
-	
+}
+#angie{
+	background: url(/assets/accredited_logos.png) 0 100px;
+	width: 200px;
+	height: 100px;
+	display: block;
+	float: left;
+	margin-top: 25px;
 }
 #home{
 	background: url(/assets/freedom_logo.png) no-repeat;
 	width: 390px;
 	height: 165px;
-	text-indent: -9999px;
 	display:block;
-	vertical-align: middle;
+	float: left;
 }
 #heating, #air, #repair, #discounts, #testimonials, #warranties, #contact{
 	background: #0068b3;
 	color:#fff;
-	padding:10px 30px;
+	padding:10px 29px;
 	text-decoration: none;
 	font-size: .8em;
 	display: inline-block;
