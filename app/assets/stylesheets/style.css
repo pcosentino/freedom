@@ -1,29 +1,20 @@
 *{
 	margin:0;
 }
-@font-face{
-	font-family: scratch;
-	src:url(/assets/pwscratchedfont-webfont.woff);
-}
 html{
 	background: #282828;
-	/*font-family: 'Patrick Hand', cursive;*/
-	font-family: 'Russo One', sans-serif;
+	font-family: 'Arial';
 }
 h1{
-	font-family: scratch;
 	font-size: 2em;
 	border-bottom: 2px solid #000;
 }
 h3{
-	font-family: scratch;
 }
 p, li{
-	font-family: 'Russo One', sans-serif;
 	font-size: 1em;
 }
 a{
-	font-family: 'Russo One', sans-serif;
 	text-decoration: none;
 }
 img{
@@ -40,10 +31,10 @@ img{
 	background: #fff ;
 }
 #header #call{
-  float: left;
-  margin: 42px 75px;
+	float: left;
+  margin: 42px 65px;
   text-align: center;
-  width: 250px;
+  width: 270px;
 }
 #header h1{
 	border: none;
@@ -54,6 +45,12 @@ img{
 }
 /************NAVIGATION*************/
 #navigation{
+	padding-left: 10px;
+	background-image: linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 }
 #angie{
 	background: url(/assets/accredited_logos.png) 0 100px;
@@ -71,7 +68,11 @@ img{
 	float: left;
 }
 #heating, #air, #repair, #discounts, #testimonials, #warranties, #contact{
-	background: #0068b3;
+	background-image: linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	color:#fff;
 	padding:10px 29px;
 	text-decoration: none;
@@ -82,7 +83,11 @@ img{
 	margin-bottom: 0px;
 }
 #heating:hover, #air:hover, #repair:hover, #discounts:hover, #testimonials:hover, #warranties:hover, #contact:hover{
-	text-decoration: underline;
+	background-image: linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
 }
 
 /************CONTAINER*************/
@@ -123,9 +128,36 @@ img{
 }
 #services{
 	width:380px;
+	float: left;
 }
 #services ul{
 	list-style-image:url('check.png');
+}
+#services li{
+	line-height: 30px;
+}
+.coupon{
+background: #e0f3fa; /* Old browsers */
+background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 40%, #b8e2f6 60%, #b6dffd 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0f3fa), color-stop(40%,#d8f0fc), color-stop(60%,#b8e2f6), color-stop(100%,#b6dffd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
+
+  border: 3px dashed;
+  float: left;
+  font-size: 18px;
+  margin: 35px 0 0 100px;
+  padding: 15px 0;
+  text-align: center;
+  width: 380px;
+}
+.coupon h2{
+	color:#ba2737;
+}#home_wrapper #info .coupon p{
+	margin:0;
 }
 #accredited{
 	margin-top: 50px;
@@ -138,7 +170,7 @@ img{
 	float: left;
 }
 #angies{
-	background: url('accredited_logos.png') 0 240px;
+	background: url('accredited_logos.png') 0 340px;
 	display: block;
 	width: 200px;
 	height:240px;
@@ -196,8 +228,8 @@ img{
 	padding-top: 35px;
 }
 
-@media screen and (device-aspect-ratio: 40/71){
+/*@media screen and (device-aspect-ratio: 40/71){
 	h1{
 		font-size: 72px;
 	}
-}
+}*/
