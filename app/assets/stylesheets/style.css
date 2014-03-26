@@ -214,6 +214,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 #contact_wrapper #info{
 	padding: 25px 45px;
 }
+#map{
+	background: url(map.jpg);
+	width: 1000px;
+	height: 378px;
+}
+#contact_left{
+	float: left;
+	margin-top: 30px;
+}
+#contact_left h3{
+	border-bottom: 1px solid #000;
+	margin-bottom:5px;
+}
+#contact_left p{
+	margin-bottom:20px;
+}
+#contact_form{
+	margin-top: 30px;
+	border: 1px solid gray;
+	width: 305px;
+	float: right;
+	background: lightgray;
+	padding: 30px;
+	border-radius: 10px;
+}
+.field{
+	margin-bottom:20px;
+	width: 300px;
+}
+textarea{
+	resize:none;
+	width:300px;
+	height: 75px;
+}
+#submit_form_button{
+	margin-top:20px;
+}
 /************FOOTER*************/
 #footer{
 	background: #0068b3;

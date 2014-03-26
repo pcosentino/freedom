@@ -4,6 +4,27 @@
 			<h1>Contact</h1>
 			<p>Please feel free to reach out, we'd love to hear from you.</p>
 
+
+			<div id="contact_left">
+
+				<h3>Office Location</h3>
+				<p>9958 W. Grand Ave<br>
+					 Franklin Park, Il 60131
+				</p>
+
+				<h3>Phone</h3>
+				<p>Daytime: 847-288-1788<br>
+					 Emergency Service Only: 708-369-3123<br>
+					 Fax: 847-288-1786
+				</p>
+
+				<h3>Office Hours</h3>
+				<p>Mon-Fri: 8am to 4:30pm<br>
+					 24 Hour Emergency Service
+				</p>
+
+			</div>
+
 			<%= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do %>
 			      <div class="label">First Name:</div>
 			      <%= text_field_tag :first_name, '', :class=>  "field", :name => "user[first_name]"%><br>
@@ -11,10 +32,15 @@
 			      <%= text_field_tag :last_name, '', :class=>  "field", :name => "user[last_name]"%><br>
 			      <div class="label">Email Address:</div>
 			      <%= email_field_tag :email_address, '', :class=>  "field", :name => "user[email_address]"%><br>
+			      <div class="label">Phone:</div>
+			      <%= email_field_tag :phone, '', :class=>  "field", :name => "user[phone]"%><br>
 			      <div class="label">How can I help you?</div>
 			      <%= text_area_tag :notes, '', :name => "user[notes]"%><br>
 			      <%= submit_tag "Submit", :id => "submit_form_button" %>
 			<% end %>
+
+			<div class="clear"></div>
 		</div>
+			<div id="map"></div>
 	</div>	
 </div>
