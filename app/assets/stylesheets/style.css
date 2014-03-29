@@ -3,13 +3,15 @@
 }
 html{
 	background: #282828;
-	font-family: 'Arial';
+	font-family: 'Carrois Gothic', sans-serif;
 }
 h1{
 	font-size: 2em;
 	border-bottom: 2px solid #000;
+	font-family: 'Fugaz One', cursive; 
 }
-h3{
+h2, h3, h4{
+	font-family: 'Fugaz One', cursive; 
 }
 p, li{
 	font-size: 1em;
@@ -20,19 +22,22 @@ a{
 img{
 	border:none;
 }
+ul{
+	list-style-image:url('check.png');
+}
 .clear{
 	clear:both;
 }
 /************HEADER*************/
 #header{
 	width: 1000px;
-	height: 198px;
+	height: 207px;
 	margin: 0 auto;
 	background: #fff ;
 }
 #header #call{
 	float: left;
-  margin: 42px 65px;
+  margin: 30px 65px;
   text-align: center;
   width: 270px;
 }
@@ -74,9 +79,9 @@ img{
 	background-image: -webkit-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	background-image: -ms-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	color:#fff;
-	padding:9px 29px;
+	padding: 10px 15px;
 	text-decoration: none;
-	font-size: .8em;
+	font-size: 1.1em;
 	display: inline-block;
 	vertical-align: bottom;
 	margin-right:-5px;
@@ -129,9 +134,6 @@ img{
 #services{
 	width:380px;
 	float: left;
-}
-#services ul{
-	list-style-image:url('check.png');
 }
 #services li{
 	line-height: 30px;
@@ -190,29 +192,100 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 #heating_wrapper #info{
 	padding: 25px 45px;
 }
+#heating_wrapper h1{
+	margin-bottom:25px;
+}
+#heating_wrapper p{
+	margin-bottom: 20px;
+}
+#heating_wrapper h3{
+	border-bottom:1px solid #000;
+	width: 400px;
+	margin-bottom: 10px;
+}
+#heating_wrapper ul{
+	margin-bottom: 20px;
+}
 /************AIR CONDITIONING*************/
 #air_wrapper #info{
 	padding: 25px 45px;
+}
+#air_wrapper h1{
+	margin-bottom:25px;
+}
+#air_wrapper p{
+	margin-bottom: 20px;
+}
+#air_wrapper h3{
+	border-bottom:1px solid #000;
+	width: 400px;
+	margin-bottom: 10px;
+}
+#air_wrapper ul{
+	margin-bottom: 20px;
 }
 /************REPAIR*************/
 #repair_wrapper #info{
 	padding: 25px 45px;
 }
+#repair_wrapper h1{
+	margin-bottom:25px;
+}
+#repair_wrapper p{
+	margin-bottom: 20px;
+}
+#repair_wrapper h3{
+	border-bottom:1px solid #000;
+	width: 400px;
+	margin-bottom: 10px;
+}
 /************DISCOUNTS*************/
 #discounts_wrapper #info{
 	padding: 25px 45px;
+}
+#discounts_wrapper h1{
+	margin-bottom:25px;
 }
 /************TESTIMONIALS*************/
 #testimonials_wrapper #info{
 	padding: 25px 45px;
 }
+#testimonials_wrapper h1{
+	margin-bottom:25px;
+}
+.quote {
+	margin-bottom: 25px;
+}
+.quote p{
+	font-style: italic;
+}
+#testimonials_wrapper h3{
+	width: 650px;
+	margin-bottom: 10px;
+}
+#testimonials_wrapper h4{
+	color:#0c4169;
+	margin-bottom: 5px;
+}
 /************WARRANTIES*************/
 #warranties_wrapper #info{
 	padding: 25px 45px;
 }
+#warranties_wrapper p{
+	margin:25px 0;
+}
+#badge{
+	background: url(100.png) no-repeat;
+	width: 300px;
+	height: 362px;
+	margin: 0 auto; 
+}
 /************CONTACT*************/
 #contact_wrapper #info{
 	padding: 25px 45px;
+}
+#contact_wrapper h1{
+	margin-bottom:25px;
 }
 #map{
 	background: url(map.jpg);
