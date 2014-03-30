@@ -3,16 +3,24 @@
 	   <div class="slideshow">
       <div class="slides">
         <div style="visibility:visible" class="slide" id="image1">
-            <img alt="" src="/assets/banner1.jpg" />
+            <%= link_to(pages_contact_path) do %>
+              <img alt="" src="/assets/banner1.jpg" />
+            <% end %>
         </div>
         <div class="slide" id="image2">
-            <img alt="" src="/assets/banner2.jpg" />
+            <%= link_to(pages_repair_path) do %>
+              <img alt="" src="/assets/banner2.jpg" />
+            <% end %>
         </div>
         <div class="slide" id="image3">
-            <img alt="" src="/assets/banner3.jpg" />
+            <%= link_to(pages_discounts_path) do %>
+              <img alt="" src="/assets/banner3.jpg" />
+            <% end %>
         </div>
         <div class="slide" id="image4">
-            <img alt="" src="/assets/banner4.jpg" />
+            <%= link_to(pages_air_path) do %>
+              <img alt="" src="/assets/banner4.jpg" />
+            <% end %>
         </div>
       </div>
     </div>
@@ -37,15 +45,20 @@
         </ul>
       </div>
 
-      
-      <div class="coupon">
-        <h2>Save $35</h2>
-        <p>Any Repair <br>Over $200</p>
-      </div>
-      <div class="coupon">
-        <h2>$250 OFF</h2>
-        <p>Any New <br> Installation Pagage</p>
-      </div>
+      <%= link_to(pages_discounts_path) do %>
+        <div class="coupon">
+          <h2>Save $35</h2>
+          <p>Any Repair <br>Over $200</p>
+          <% %>
+        </div>
+      <% end %>
+
+      <%= link_to(pages_discounts_path) do %>
+        <div class="coupon">
+          <h2>$250 OFF</h2>
+          <p>Any New <br> Installation Package</p>
+        </div>
+      <% end %>
 
       <div class='clear'></div>
 
@@ -53,9 +66,9 @@
       <div id="accredited">
         <div id="bbb"></div>
 
-        <span id="testimonials_home">
-
-        </span>
+      <%= link_to(pages_testimonials_path) do %>
+        <span id="testimonials_home"></span>
+      <% end %>
 
         <div id="angies"></div>
       </div>

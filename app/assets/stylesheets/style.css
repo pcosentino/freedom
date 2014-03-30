@@ -37,9 +37,9 @@ ul{
 }
 #header #call{
 	float: left;
-  margin: 30px 65px;
+  margin: 35px 45px;
   text-align: center;
-  width: 270px;
+  width: 310px;
 }
 #header h1{
 	border: none;
@@ -245,6 +245,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 }
 #discounts_wrapper h1{
 	margin-bottom:25px;
+}
+#discounts_wrapper .coupon{
+	margin: 0 30px 50px;
+}
+#discounts_wrapper #coupon_left{
+	float: left;
 }
 /************TESTIMONIALS*************/
 #testimonials_wrapper #info{
