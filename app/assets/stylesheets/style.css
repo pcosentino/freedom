@@ -16,6 +16,9 @@ h2, h3, h4{
 p, li{
 	font-size: 1em;
 }
+li{
+	line-height: 30px;
+}
 a{
 	text-decoration: none;
 }
@@ -135,9 +138,6 @@ ul{
 	width:380px;
 	float: left;
 }
-#services li{
-	line-height: 30px;
-}
 .coupon{
 background: #e0f3fa; /* Old browsers */
 background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 40%, #b8e2f6 60%, #b6dffd 100%); /* FF3.6+ */
@@ -205,6 +205,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 }
 #heating_wrapper ul{
 	margin-bottom: 20px;
+	float: left;
+}
+#furnace{
+	background: url("furnace.jpg") no-repeat;
+	width: 300px;
+	height: 215px;
+	float: right;
 }
 /************AIR CONDITIONING*************/
 #air_wrapper #info{
@@ -223,6 +230,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 }
 #air_wrapper ul{
 	margin-bottom: 20px;
+	float: left;
+}
+#air_conditioner{
+	background: url("air_conditioner.jpg") no-repeat;
+	width: 290px;
+	height: 270px;
+	float: right;
 }
 /************REPAIR*************/
 #repair_wrapper #info{

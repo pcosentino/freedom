@@ -81,10 +81,7 @@ jQuery(function ($) {
         clearTimeout(timer);
         timer = setTimeout(eval("button2_click"), "5000");
     }
-    $('#button1').bind('click', button1_click);
-    $('#button2').bind('click', button2_click);
-    $('#button3').bind('click', button3_click);
-    $('#button4').bind('click', button4_click);
+
     OnLoad();
     //END SLIDESHOW
 
