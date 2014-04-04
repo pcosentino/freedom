@@ -39,8 +39,10 @@ ul{
 	background: #fff ;
 }
 #header #call{
+	height: 120px;
+	background: url(creditcards.jpg) no-repeat 41px 81px;
 	float: left;
-  margin: 35px 45px;
+  margin: 35px 45px 0;
   text-align: center;
   width: 310px;
 }
