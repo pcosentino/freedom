@@ -42,7 +42,7 @@ ul{
 	height: 120px;
 	background: url(creditcards.jpg) no-repeat 41px 81px;
 	float: left;
-  margin: 35px 45px 0;
+  margin: 25px 45px 0;
   text-align: center;
   width: 310px;
 }
@@ -69,7 +69,7 @@ ul{
 	height: 100px;
 	display: block;
 	float: left;
-	margin-top: 25px;
+	margin-top: 7px;
 }
 #home{
 	background: url(/assets/freedom_logo.png) no-repeat;
@@ -136,6 +136,12 @@ ul{
 	height: 100px;
 	width: 700px;
 	margin: 0 auto;
+}
+#social_sprite{
+	background: url('social_sprite.png') no-repeat;
+	width: 150px;
+	height: 35px;
+	float: left;
 }
 #services{
 	width:380px;
@@ -325,6 +331,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 #contact_left{
 	float: left;
 	margin-top: 30px;
+	width: 450px;
 }
 #contact_left h3{
 	border-bottom: 1px solid #000;
@@ -353,6 +360,15 @@ textarea{
 }
 #submit_form_button{
 	margin-top:20px;
+}
+table,th,td{
+	border-collapse:collapse;
+}
+table td{
+	padding:5px 15px;
+}
+table tr:nth-child(odd){
+	background: #CCC;
 }
 /************FOOTER*************/
 #footer{

@@ -71,8 +71,27 @@ jQuery(function ($) {
         }, 900, "linear", null);
         $("#button4").addClass("active");
         clearTimeout(timer);
-        timer = setTimeout(eval("button1_click"), "5000");
+        timer = setTimeout(eval("button5_click"), "5000");
         $("#image4").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
+
+        function button5_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image5").css("visibility", "visible");
+        $("#image5").css("opacity", "0");
+        $("#image5").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image5").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button5").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button1_click"), "5000");
+        $("#image5").animate({
             "opacity": 1
         }, 900, "linear", null);
     }
