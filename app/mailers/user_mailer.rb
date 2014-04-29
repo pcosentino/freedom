@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "pcosentino88@gmail.com"
+  default from: "freedomfp2006@sbcglobal.net"
 
 
   def send_email(user_info)
@@ -7,6 +7,6 @@ class UserMailer < ActionMailer::Base
     @email = user_info[:email]
     @phone = user_info[:phone]
     @description = user_info[:description]
-    mail(:to => "pcosentino88@gmail.com", :subject => "Portfolio Notification")
+    mail(:to => "freedomfp2006@sbcglobal.net", :subject => "Work Order Ticket From Freedom Site")
   end
 end
