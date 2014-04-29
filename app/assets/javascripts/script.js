@@ -104,18 +104,24 @@ jQuery(function ($) {
     OnLoad();
     //END SLIDESHOW
 
+    // var bob = function(){
+    //     $("#contact_form").on('click', function(){
+    //         alert("it worked");
+    //     });
+    // };
+    // bob();
     //SUBMIT FORM UNBIND
-    var click = function () {
+    var grayOut = function () {
         $("#submit_form_button").removeClass("disable");
         $("#submit_form_button").click(function () {
             $('#submit_form_button').unbind();
             setTimeout(function () {
-                click();
+                grayOut();
             }, 5000);
             $("#submit_form_button").addClass("disable");
         });
     };
-    click();
+    grayOut();
     //END SUBMIT FORM UNBIND
 });
 

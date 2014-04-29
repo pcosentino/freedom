@@ -28,6 +28,9 @@ img{
 ul{
 	list-style-image:url('check.png');
 }
+.disable {
+    color:#b7b7b7;
+}
 .clear{
 	clear:both;
 }
