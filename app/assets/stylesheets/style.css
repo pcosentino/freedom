@@ -151,15 +151,6 @@ ul{
 	float: left;
 }
 .coupon{
-background: #e0f3fa; /* Old browsers */
-background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 40%, #b8e2f6 60%, #b6dffd 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0f3fa), color-stop(40%,#d8f0fc), color-stop(60%,#b8e2f6), color-stop(100%,#b6dffd)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 40%,#b8e2f6 60%,#b6dffd 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
-
   border: 3px dashed;
   float: left;
   font-size: 18px;
@@ -189,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 	width: 200px;
 	height:240px;
 	float: right;
-	 margin-bottom: -90px;
+	margin-bottom: -90px;
 }
 #testimonials_home{
 	background: url('recommendation.jpg') no-repeat 13px 10px;
@@ -277,6 +268,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 }
 #discounts_wrapper #coupon_left{
 	float: left;
+}
+#repair_coupon{
+	background: url("couponsprite.png")no-repeat  -2px -3px;
+}
+#package_coupon{
+	background: url("couponsprite.png")no-repeat  -394px -9px;
+}
+#senior_coupon{
+	background: url("couponsprite.png")no-repeat  -2px -129px;
+}
+#church_coupon{
+	background: url("couponsprite.png")no-repeat -393px -129px;
+}
+#duty_coupon{
+	background: url("couponsprite.png")no-repeat -2px -230px;
 }
 /************TESTIMONIALS*************/
 #testimonials_wrapper #info{
