@@ -177,6 +177,26 @@ ul{
 }#home_wrapper #info .coupon p{
 	margin:0;
 }
+#locations{
+	padding-top:40px;
+	padding-bottom: 20px;
+}
+#weather{
+	display: inline-block;
+	vertical-align: top;
+}
+aside table{
+	width: 364px;
+}
+aside#service-areas{
+	display: inline-block;
+	padding-top: 60px;
+	padding-left: 100px;
+}
+#service-areas h1{
+	position: absolute;
+	margin-top:-49px;
+}
 #accredited{
 	margin-top: 50px;
 }
