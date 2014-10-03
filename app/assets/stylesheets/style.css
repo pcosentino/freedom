@@ -2,7 +2,6 @@
 	margin:0;
 }
 html{
-	border:1px solid #fff;
 	background: #282828;
 	font-family: 'Carrois Gothic', sans-serif;
 }
@@ -82,22 +81,22 @@ ul{
 	display:block;
 	float: left;
 }
-#heating, #air, #repair, #discounts, #testimonials, #warranties, #contact{
+#heating, #air, #repair, #discounts, #testimonials, #warranties, #contact, #careers{
 	background-image: linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	background-image: -ms-linear-gradient(bottom, rgb(60,94,127) 0%, rgb(0,125,215) 100%);
 	color:#fff;
-	padding: 10px 15px;
+	padding: 11px 15px;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1em;
 	display: inline-block;
 	vertical-align: bottom;
 	margin-right:-5px;
 	margin-bottom: 0px;
 }
-#heating:hover, #air:hover, #repair:hover, #discounts:hover, #testimonials:hover, #warranties:hover, #contact:hover{
+#heating:hover, #air:hover, #repair:hover, #discounts:hover, #testimonials:hover, #warranties:hover, #contact:hover, #careers:hover{
 	background-image: linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(0,125,215) 0%, rgb(60,94,127) 100%);
@@ -412,6 +411,12 @@ table td{
 }
 table tr:nth-child(odd){
 	background: #CCC;
+}
+/************CAREERS*************/
+#hiring_ribbon{
+	position: absolute;
+margin-top: -128px;
+margin-left: 205px;
 }
 /************FOOTER*************/
 #footer{

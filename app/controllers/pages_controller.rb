@@ -24,6 +24,9 @@ class PagesController < ApplicationController
 	def contact
 	end
 
+	def careers
+	end
+
  	def send_email
       user_name =  "#{params[:user][:first_name]} #{params[:user][:last_name]}"
       email_address = params[:user][:email_address]

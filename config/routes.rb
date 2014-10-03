@@ -23,6 +23,8 @@ Freedom::Application.routes.draw do
   get 'pages/testimonials'
   get 'pages/warranties'
   get 'pages/contact'
+  get 'pages/careers'
+
 
   # Example resource route with options:
   #   resources :products do
