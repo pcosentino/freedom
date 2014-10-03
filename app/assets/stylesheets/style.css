@@ -2,6 +2,7 @@
 	margin:0;
 }
 html{
+	border: 1px solid red;
 	background: #282828;
 	font-family: 'Carrois Gothic', sans-serif;
 }
