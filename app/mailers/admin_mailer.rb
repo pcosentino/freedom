@@ -1,3 +1,5 @@
 class AdminMailer < ActionMailer::Base
-  default from: "cosepaol88@gmail.com"
+  def user_added
+		mail(:to => "cosepaol88@email.com", :subject => "New friend added")
+	end
 end
