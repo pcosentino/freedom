@@ -1,7 +1,9 @@
 ActionMailer::Base.smtp_settings = {
-     :address              => "smtp.mail.yahoo.com",
-     :port                 => 25,
-     :user_name            => 'freedomfp2006@sbcglobal.net',
-     :password             => 'morgan120973',
-     :authentication       => :plain,
-		 :enable_starttls_auto => true }
+:address => ‘smtp.sendgrid.net’,
+:port => ‘587’,
+:authentication => :plain,
+:user_name => ENV[‘SENDGRID_USERNAME’],
+:password => ENV[‘SENDGRID_PASSWORD’],
+:domain => ‘heroku.com’
+}
+ActionMailer::Base.delivery_method = :smtp
