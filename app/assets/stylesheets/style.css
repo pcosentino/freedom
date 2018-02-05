@@ -193,12 +193,12 @@ ul{
 	vertical-align: top;
 }
 aside table{
-	width: 364px;
+	width: 342px;
 }
 aside#service-areas{
 	display: inline-block;
 	padding-top: 60px;
-	padding-left: 100px;
+	color:#000000;
 }
 #service-areas h1{
 	position: absolute;
@@ -414,7 +414,7 @@ table,th,td{
 	border-collapse:collapse;
 }
 table td{
-	padding:5px 15px;
+	padding:5px 0px;
 }
 table tr:nth-child(odd){
 	background: #CCC;
