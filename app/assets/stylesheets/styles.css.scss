@@ -1,0 +1,864 @@
+$red:   #df5656;
+$white: #ffffff;
+$blue:  #1d79c0;
+$gray:  #5f5f5f;
+
+// RAILS_ENV=production bundle exec rake assets:precompile
+body{
+	font-family:'Carrois Gothic', sans-serif;
+	text-align: center;
+	p{
+		font-family: 'Carrois Gothic', sans-serif;
+		font-size: 1.2em;
+	}
+	a{
+		color:$blue;
+		cursor:pointer;
+		text-decoration: underline;
+	}
+}
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+h1{
+	padding-bottom: .2em;
+	color:$blue;
+}
+h2, h3, h4, h5{
+	color:$red;
+	text-decoration:underline;
+}
+//////////////// NAVIGATION ////////////////
+#navigation{
+	position: fixed;
+	z-index: 2;
+	background: #fff;
+	width: 100%;
+	ul{
+		li{
+			text-decoration: underline;
+			-moz-text-decoration-color: #9d9d9d;
+			text-decoration-color: #9d9d9d; 
+			list-style: none;
+			display: inline-block;
+			font-size: 1.8em;
+			padding:0;
+		}
+	}
+	.home_button a{
+		background:asset-data-url("eagleSmall.png") no-repeat;
+		width:43px;
+		height: 82px;
+		position: absolute;
+		top: 5px;
+		left: 0px;
+		z-index: 1;
+		
+	}
+}
+.navbar-nav{
+	margin-top:-1px;
+	padding-right:0;
+	
+	font-size:10px;
+}
+.navbar, .navbar-inverse{
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	background:#fff;
+	color:#000;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+	color:#ffffff;
+	background:#999999;
+
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+		background-color: #999999;
+}
+.navbar-inverse .navbar-toggle{
+		background: #999999;
+		border-color: #999999;
+}
+.navbar-inverse .navbar-nav > li > a{
+	padding: 30px 25px 33px 25px;
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+	color:$white;
+	background:$gray;
+}
+.navbar-inverse .navbar-nav li a:hover{
+	background-color: $gray;
+	transition: 0.2s all linear;
+	height: 100%;
+	color:#ffffff;
+	text-decoration: underline;
+	-moz-text-decoration-color: #ffffff;
+	text-decoration-color: #ffffff;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+	background-color:$blue;
+}
+#nav-icon3{
+	width: 50px;
+	height: 45px;
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+#nav-icon3 span{
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 75%;
+	border-radius: 9px;
+	opacity: 1;
+	left: 6px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+#nav-icon3 span:nth-child(1){
+	top: 9px;
+}
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3){
+	top: 15px;
+}
+#nav-icon3 span:nth-child(4){
+	top: 25px;
+}
+#nav-icon3.open span:nth-child(1){
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+#nav-icon3.open span:nth-child(2){
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#nav-icon3.open span:nth-child(3){
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#nav-icon3.open span:nth-child(4){
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+a{
+	color: red; 
+	&:hover{
+		color: #4fb3e8;
+		-webkit-transition: all .1s ease-in-out;
+			 -moz-transition: all .1s ease-in-out;
+				-ms-transition: all .1s ease-in-out;
+				 -o-transition: all .1s ease-in-out;
+						transition: all .1s ease-in-out;
+	}
+	text-decoration: none;
+}
+ul li a{
+	display: block;
+	padding: 20px;
+	font-weight: 200;
+	&:hover{
+		color: #fff;
+		background: #e6764e;
+		-webkit-transition: all .2s ease-in-out;
+			 -moz-transition: all .2s ease-in-out;
+				-ms-transition: all .2s ease-in-out;
+				 -o-transition: all .2s ease-in-out;
+						transition: all .2s ease-in-out;
+	}
+	color: #fff;
+	text-decoration: none;
+}
+//////////////// SLIDES ////////////////
+#myCarousel{
+	.carousel-inner{
+		.item{
+		width: 100vw;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		}
+	}
+	.carousel-indicators li{
+		&.active{
+			background-color: $blue;
+		}
+	}
+	.slide1{
+		background:asset-data-url("freedomSlide01d.jpg") no-repeat;
+		background-position: 0px 0%;	  
+	}
+	.slide2{
+	 	background:asset-data-url("freedomSlide02.jpg") no-repeat;
+		background-position: 0px 5%;	  
+	}
+	.slide3{
+		background:asset-data-url("freedomSlide03b.jpg") no-repeat;
+		background-position: 0px 0%;	
+
+	}
+	.slide4{
+		background:asset-data-url("freedomSlide04.jpg") no-repeat;
+		background-position: 0px 60%;	  
+	}
+	.slide5{
+		background:asset-data-url("freedomSlide05.gif") no-repeat;
+		background-position: 0px 30%;	  
+	}
+}
+//////////////// CAROUSEL ////////////////
+#playButton, #pauseButton{display:none;}
+#myCarousel{
+	.carousel .item img{
+		width: auto;
+		height: 100vh;
+		min-width: 100%;
+		background-size: cover;
+	}
+	.carousel-inner>.item>img{
+		max-width:initial;
+	}
+	#carouselButtons{
+		margin-left: 100px;
+		position: absolute;
+		bottom: 0px;
+	}
+	.carousel-indicators{
+		z-index:1;
+	}
+}
+//////////////// HEATING AND COOLING ////////////////
+#section1{
+	background:asset-data-url("diagonal_fabric.png") repeat;
+	padding:2.5em 0;
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+	}
+	h1{
+		font-size: 3em;
+		margin:15px 0 0 0;
+	}
+	h3{
+		text-decoration:underline;
+	}
+	p, em{
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 1.2em;
+	}
+	em{
+		margin:2em 0;
+		display: block;
+	}
+	ul{
+		padding:0;
+	}
+	li{
+		list-style: none;
+		line-height: 20px;
+	}
+	i.fa.fa-check{
+	}
+}
+#heatingAndCoolingTransition{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("workerDiagnosing.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+}
+//////////////// WARRANTIES ////////////////
+#section2{
+	background:asset-data-url("wild_oliva.png") repeat;
+	padding:2.5em 0;
+	color:#ffffff;
+	h1{
+		font-size: 3em;
+		margin:15px 0 0 0;
+	}
+	h2{
+		margin-top:5%;
+	}
+	img.guarantee{
+		margin:0 0 1% 0;
+	}
+	.quote{
+		margin-top:5%;
+		margin-bottom:5%;
+	}
+}
+#warrantiesTransition{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("newUnit.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+}
+//////////////// TESTIMONIALS ////////////////
+#section3{
+	background:asset-data-url("diagonal_fabric.png") repeat;
+	padding:2.5em 0;
+	h1{
+		font-size: 3em;
+		margin:15px 0 0 0;
+	}
+	h4{
+		text-decoration:underline;
+		margin:3% 0 1% 0;
+	}
+}
+#testimonialsTransition{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("solder.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+}
+
+//////////////// DISCOUNTS ////////////////
+#section4{
+	background:asset-data-url("wild_oliva.png") repeat;
+	padding:2.5em 0;
+	color:#ffffff;
+	h1{
+		margin-top:15px;
+		margin-bottom:0em;
+	}
+	p{
+		margin-bottom:5%;
+	}
+	.coupon{
+		border:2px dashed $red;
+		margin:5% 0;
+	}
+}
+#discountsTransition{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("install.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+}
+//////////////// CAREERS ////////////////
+#section5{
+	background:asset-data-url("diagonal_fabric.png") repeat;
+	padding:2.5em 0;
+}
+#careersTransition{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("careersWorker.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+}
+//////////////// CONTACT ////////////////
+#section6{
+	background:asset-data-url("wild_oliva.png") repeat;
+	padding:2.5em 0;
+	color:#ffffff;
+	h3{
+		text-decoration: underline;
+	}
+	#workOrder{
+		font-size: 1.5em;
+		.label{
+			color:$blue;
+			font-size: 1em;
+		}
+		.field{
+			color:#000000;
+			margin: 0 0 2% 0;
+			vertical-align: top;
+		}
+		#submitFormButton{
+			background-color:$blue;
+			font-size: 1em;
+		}
+	}
+}
+#footer{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+	asset-data-url("footer.jpg") no-repeat;
+	padding-top:2.5em;
+	width: 100vw;
+	height: 88vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-shadow: 3px 2px 10px #000000;
+	position: relative;
+	p{
+		margin-top:2.5em;
+		margin-bottom:0;
+		color:#fff;
+	}
+	a{
+		font-size: 2em;
+	}
+	h2{
+		color:#ffffff;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}	
+}
+
+
+
+
+////////////// MEDIA QUERIES //////////////
+@media screen and (max-width: 1921px) {
+	.carousel .item img{
+		background-position: initial;
+		height:100%;
+	}
+}	
+@media screen and (max-width: 1200px) {
+	#navigation .home_button a{
+		left:44.5%;
+	}
+	#section4{
+		#bbb{
+			margin:0 1%;
+		}
+		img{
+			max-width: 30%;
+		}
+	}
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		background-position: 65% 0;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#navigation .home_button a{
+		left:43.5%;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.slide1{
+		background-position: 85% 30%;
+	}
+	.carousel .item img{
+		width:100%;
+		height: initial;
+	}
+	#myCarousel{
+		.slide1{
+			background-position:65% 0;
+		}
+		.slide2{
+			background-position:0% 0;
+		}
+		.slide3{
+			background-position:50% 0;
+		}
+		.slide4{
+			background-position:0% 0;	  
+		}
+		.slide5{
+			background-position:57% 0;	  
+		}
+		.slide6{
+			background-position:80% 0;	  
+		}
+		.slide7{
+			background-position:55% 0;
+		}
+		.slide8{
+			background-position:50% 0;
+		}
+		.slide9{
+			background-position:60% 0;
+		}
+		.slide10{
+			background-position:72% 0;
+		}
+	}
+	#bridesCarousel img{
+		width: 200px;
+		height: 200px;
+	}
+
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	#myCarousel{
+		.carousel-inner{
+			.item{
+				width: 100%;
+				height: 520px;
+				background-attachment:scroll;
+			}
+			.slide1{
+				background-position: 0px -20%;	  
+			}
+			.slide2{
+				background-position: 0px 90%;	  
+			}
+			.slide3{
+				background-position: 0px 60%;	  
+			}
+			.slide4{
+				background-position: 0px 25%;	 
+			}
+			.slide5{
+				background-position: 0px -20%;	  
+			}
+			.slide6{
+				background-position: 0px 80%;	  
+			}
+			.slide7{
+				background-position: 0px 45%;	  
+			}
+			.slide8{
+				background-position: 0px -50%;	  
+			}
+			.slide9{
+				background-position: 0px -60%;	  
+			}
+			.slide10{
+				background-position: 0px 60%;	  
+			}
+		}
+		.hashtag{
+			color:$blue;
+			text-decoration: underline;
+			margin:0;
+			font-size: 2em;
+			text-shadow: 2px 2px 0px #080808;
+		}
+	}
+
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		width:100%;
+		background-attachment:scroll; 
+	}
+}
+@media screen and (max-width: 860px) {
+	#myCarousel{
+		.carousel-inner{
+			.item{
+				width: 100%;
+				height: 520px;
+				background-attachment:scroll;
+			}
+			.slide1{
+				background:asset-data-url("freedomSlide01med.jpg") no-repeat;
+				background-position:65% 50px;
+			}
+			.slide2{
+				background:asset-data-url("freedomSlide02.jpg") no-repeat;
+				background-position:5% 50px;
+			}
+			.slide3{
+				background:asset-data-url("freedomSlide03medc.jpg") no-repeat;
+				background-position:30% 40px;
+			}
+			.slide4{
+				background:asset-data-url("freedomSlide04medb.jpg") no-repeat;
+				background-position:30% 10px;
+			}
+			.slide5{
+				background:asset-data-url("freedomSlide05medb.gif") no-repeat;
+				background-position:50% 0px;
+			}
+		}
+	}
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		width:100%;
+		background-attachment:scroll; 
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar-nav {
+		margin: 7.5px 0px;
+	}
+	#myCarousel{
+		.carousel-inner{
+			.item{
+				width: 100%;
+				height: 520px;
+				background-attachment:scroll;
+			}
+			.slide1{
+				background-position:65% 50px;
+			}	
+		}
+		// .slide2{
+	 //  	background-position:50% 0;
+		// }
+		// .slide3{
+		//   background-position:33% 0;	  
+		// }
+		//.slide4{
+		//   background-position:0 0;	
+		// }
+		// .slide5{
+		//   background-position:57% 0;	  
+		// }
+	}
+	#navigation{
+		ul.navbar-nav{
+			margin-top:0;
+			margin-bottom:0;
+			padding:0;
+		}
+		.navbar-inverse .navbar-nav > li > a{
+			color:$gray;
+			padding: 20px;
+			font-size: .95em;
+		}
+		.navbar-inverse .navbar-nav > li {
+			padding-right:0;
+		}	
+	}
+	#countdown{
+		font-size: 2.5em;
+		h1{
+			font-weight: bold;
+			margin-top:0;
+			margin-bottom:-10px;
+		}
+	}
+	.carousel-indicators{
+		z-index:1;
+	}
+}
+@media screen and (max-width: 627px) {
+	#engagement_pics{
+		width:60%;
+		.single_1 img{
+			margin:.5em;
+		}
+	}
+	#section4{
+		img{
+			max-width: 100%;
+			border-bottom:none;
+		}
+		#williams{
+			border-bottom:5px solid $blue;
+		}
+		#bbb{
+			margin: 0;
+		}
+	}
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		width:100%;
+		height: 100%;
+		background-attachment:scroll;
+		background-position: 45% 0;
+		padding-bottom: 5em;
+		p{
+			margin-top: 1.5em;
+		}
+		h2{
+			font-size: 1.3em;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	#myCarousel{
+		.carousel-indicators{
+			bottom:25px;
+		}
+		.carousel-inner{
+			.slide1{
+				background:asset-data-url("freedomSlide01small.jpg") 0px 60px no-repeat;
+			}
+		}	
+	}
+	#section1{
+		#engagement_pics {
+			width: 75%;
+		}
+	}
+	#section3{
+			.carousel-indicators{
+				display: none;
+		}
+		#bridesCarousel{
+			.item{
+				padding:1.5em 0;
+			}
+		}
+		#groomsCarousel{
+			.item{
+				padding:1.5em 0;
+			}
+		}
+	}
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		height:600px;
+		a{
+			display: block;
+			margin-bottom: 1%;
+		}
+	}
+}
+@media screen and (max-width: 430px) {
+	#navigation .navbar-inverse .navbar-nav > li > a:hover{color:$white;}
+	.carousel-indicators{
+		bottom:0;
+	}
+	#countdown{
+		font-size: 1.7em;
+	}
+	#section1{
+		i.fa.fa-music{
+			font-size:3em;
+			margin:0 2.5%;
+		}
+		#engagement_pics {
+			width: 90%;
+		}
+	}
+	#section2{
+		i.fa.fa-map-marker{
+			margin-right: -5%;
+			font-size: 4em;
+		}
+		a{
+			display: inline-block;
+			width:49%;
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+
+	#myCarousel{
+		.carousel-indicators{
+			bottom:25px;
+		}
+		.carousel-inner{
+			.slide1{
+				background:asset-data-url("freedomSlide01small.jpg") 0px 60px no-repeat;
+			}
+			.slide2{
+				background:asset-data-url("freedomSlide02small.jpg") 50% 60px no-repeat;
+			}
+			.slide3{
+				background:asset-data-url("freedomSlide03smallb.jpg") 50% 55px no-repeat;
+			}
+			.slide4{
+				background:asset-data-url("freedomSlide04smallb.jpg") 40% 10px no-repeat;
+			}
+			.slide5{
+				background:asset-data-url("freedomSlide05smallb.gif") 50% 25px no-repeat;
+			}
+		}	
+	}
+	#section2{
+		a{
+			width:55%;
+		}
+	}
+	#section3{
+		#bridesCarousel{
+			.carousel-indicators{
+				width:62%;
+			}
+			.item{
+
+			}
+		}
+		#groomsCarousel{
+			.item{
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+	#section1{
+		#engagement_pics {
+			width: 100%;
+			.single_1 img{
+				margin:.3em;
+			}
+		}
+	}
+	#section2{
+		a{
+			width:65%;
+		}
+	}
+	#section3{
+		#bridesCarousel{
+			width:100%;
+			.item{
+				padding:1.5em 0 0 0;
+			}
+		}
+	
+		#groomsCarousel{
+			width:100%;
+			.item{
+				padding:1.5em 0 0 0;
+			}
+		}
+	}
+	#section4{
+		img{
+			border-top:5px solid $blue;
+			margin:2% 0;
+			max-width: 90%;
+		}
+		#bbb{
+			margin:0;
+		}
+	}
+	#heatingAndCoolingTransition, #warrantiesTransition, #careersTransition, #testimonialsTransition, #discountsTransition, #footer{
+		height: 650px;
+		h2{
+			font-size: 1.7em;
+		}
+	}
+}

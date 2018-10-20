@@ -1,90 +1,16 @@
-#home_wrapper
-  #container
-    .slideshow
-      .slides
-        #image1.slide{:style => "visibility:visible"}
-          = link_to(pages_contact_path) do
-            %img{:alt => "", :src => "/assets/banner1.jpg"}/
-        #image2.slide
-          = link_to(pages_repair_path) do
-            %img{:alt => "", :src => "/assets/AngiesListBanner2000.gif"}/
-        #image3.slide
-          = link_to(pages_discounts_path) do
-            %img{:alt => "", :src => "/assets/banner3.jpg"}/
-        #image4.slide
-          = link_to(pages_air_path) do
-            %img{:alt => "", :src => "/assets/banner4.jpg"}/
-        #image5.slide
-          %a{:href => "https://apply.svcfin.com/home/dealerAuthentication?id=400510534=1742219857"}
-            %img{:alt => "", :src => "/assets/banner5.jpg"}/
-    #info
-      %h1 Freedom Heating  Cooling
-      %p
-        Thank you for visiting Freedom Heating  Cooling. We are here to serve you - Whether it's heating or cooling, we've got you covered. Our licensed  insured technicians are on call 24 hours a day, 7 days a week. We take great pride in our prompt service and rapid response. With 30 years of experience, our technicians offer reliable service that you can count on and at prices you can afford. See our Heating Coupons and Air Conditioning coupons.
-      #logos
-      #services
-        %h1 Services
-        %ul
-          %li 24 Hour Emergency Service
-          %li Residential  Commercial HVAC Systems
-          %li Air Conditioning Repair - All Makes  Models
-          %li Air Conditioning Installation
-          %li Air Conditioning Tune Ups
-          %li Heating Repair
-      = link_to(pages_discounts_path) do
-        #repair_coupon.coupon
-          %h2 Save $35
-          %p
-            Any Repair
-            %br Over $200
-        = link_to(pages_discounts_path) do
-          #package_coupon.coupon
-            %h2 $250 OFF
-            %p
-              Any New
-              %br Installation Package
-          .clear
-          %section#locations
-            %aside#service-areas
-              %h1 We service your area!
-              %table
-                %tr
-                  %td Barrington
-                  %td 847-843-7300
-                %tr
-                  %td Belwood
-                  %td 708-344-2225
-                %tr
-                  %td Chicago
-                  %td 773-685-5252
-                %tr
-                  %td Downers Grove
-                  %td 630-769-1939
-                %tr
-                  %td Forest Park
-                  %td 708-771-1894
-                %tr
-                  %td Franklin Park
-                  %td 847-451-6100
-                %tr
-                  %td Glen Ellyn
-                  %td 630-790-4565
-                %tr
-                  %td Norridge
-                  %td 708-453-5323
-                %tr
-                  %td River Grove
-                  %td 708-456-1860
-                %tr
-                  %td Schiller Park
-                  %td 847-678-5228
-                %tr
-                  %td Stone Park
-                  %td 708-338-5000
-            #accredited
-              %a{:href => "http://www.bbb.org/chicago/business-reviews/heating-and-air-conditioning/freedom-heating-cooling-in-franklin-park-il-88279894/", :target => "_blank"}
-                #bbb
-              = link_to(pages_testimonials_path) do
-                %span#testimonials_home
-              #angies
-            .clear
+//Navigation
+= render partial: "/pages/navigation"
+//Homepage
+= render partial: "/pages/homepage"
+//Heating and Cooling
+= render partial: "/pages/heatingcooling"
+//Warranties
+= render partial: "/pages/warranties"
+//Testimonials
+= render partial: "/pages/testimonials"
+//Discounts
+= render partial: "/pages/discounts"
+//Careers
+= render partial: "/pages/careers"
+//Contact Us
+= render partial: "/pages/contact"

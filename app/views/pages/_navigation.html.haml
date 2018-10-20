@@ -1,26 +1,30 @@
-#header
-  = link_to '', pages_index_path, :id => 'home'
-  #call
-    %h3 Call 24 Hours / 7 Days A Week
-    %h1 847-288-1788
-  = link_to '', "http://www.bbb.org/chicago/business-reviews/heating-and-air-conditioning/freedom-heating-cooling-in-franklin-park-il-88279894/", :id => 'bbb_nav'
-  = link_to '', "http://www.angieslist.com/companylist/us/il/franklin-park/freedom-heating-and-cooling-reviews-2198024.htm", :id => 'angie'
-  #social_sprite
-    %a{:href => "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=freedom+heating+%26+cooling&lrd=0x880fb572a94c1add:0x5171af6a8422e7f,1,,", :target => "_blank"}
-      %span.google-plus
-    %a{:href => "https://www.facebook.com/pages/Freedom-Heating-Cooling-Franklin-Park/153751817975312", :target => "_blank"}
-      %span.facebook
-    %a{:href => "http://www.angieslist.com/companylist/us/il/franklin-park/freedom-heating-and-cooling-reviews-2198024.htm", :target => "_blank"}
-      %span.angies-list
-    %span.twitter
-    %span.youtube
-  .clear
-  #navigation
-    = link_to 'Heating', pages_heating_path, :id => 'heating'
-    = link_to 'Air Conditioning', pages_air_path, :id => 'air'
-    = link_to 'Repair & Service', pages_repair_path, :id => 'repair'
-    = link_to 'HVAC Discounts', pages_discounts_path, :id => 'discounts'
-    = link_to 'Customer Testimonials', pages_testimonials_path, :id => 'testimonials'
-    = link_to 'Warranties', pages_warranties_path, :id => 'warranties'
-    = link_to 'Contact Us', pages_contact_path, :id => 'contact'
-    = link_to 'Careers', pages_careers_path, :id => 'careers'
+#navigation
+	%nav.navbar.navbar-inverse.navbar-static-top{:role => "navigation"}
+		.container
+			.navbar-header
+				%button#nav-icon3.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button", :class => "hamburger-menu-button"}
+					/ %span.sr-only Toggle navigation
+					%span.icon-bar
+					%span.icon-bar
+					%span.icon-bar
+					%span.icon-bar
+			/ Collect the nav links, forms, and other content for toggling
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				.row
+					%ul.nav.navbar-nav.col-sm-12
+						%li.col-xs-12.hidden-sm.hidden-md.hidden-lg.home_mobile
+							%a#link1.nav-section0.nav-li{:href => "#home", :class => "mobile-home-button"} Home
+						%li.col-xs-12.col-sm-2
+							%a#link1.nav-section1.nav-li{:href => "#section1", :class => ""} Heating/Cooling
+						%li.col-xs-12.col-sm-2
+							%a#link2.nav-section2.nav-li{:href => "#section2", :class => ""} Warranties
+						%li.col-xs-12.col-sm-2
+							%a#link3.nav-section3.nav-li{:href => "#section3", :class => ""} Testimonials
+						%li.hidden-xs.hidden-sm.home_button
+							%a#link1.nav-section0.nav-li{:href => "#home", :class => "desktop-home-button"} 
+						%li.col-xs-12.col-sm-2
+							%a#link3.nav-section4.nav-li{:href => "#section4", :class => ""} Discounts
+						%li.col-xs-12.col-sm-2
+							%a#link3.nav-section4.nav-li{:href => "#section5", :class => ""} Careers
+						%li.col-xs-12.col-sm-2
+							%a#link3.nav-section4.nav-li{:href => "#section6", :class => ""} Contact
