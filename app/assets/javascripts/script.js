@@ -1,72 +1,127 @@
-$(document).ready(function() {
+jQuery(function ($) {
+    //SLIDESHOW
+    var timer;
+    function button1_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image1").css("visibility", "visible");
+        $("#image1").css("opacity", "0");
+        $("#image1").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image1").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button1").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button2_click"), "5000");
+        $("#image1").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
 
-// CAROUSEL INTERVAL
-  $('#myCarousel').carousel({
-    interval:5000,
-  });
-  $('#bridesCarousel').carousel({
-    interval:false,
-  });
-  $('#groomsCarousel').carousel({
-    interval:false,
-  });
-	
-// CAROUSEL SWIPES
-	$("#myCarousel").swiperight(function() {  
-    $(this).carousel('prev');  
-	  });  
-	$("#myCarousel").swipeleft(function() {  
-		$(this).carousel('next');  
-	}); 
+    function button2_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image2").css("visibility", "visible");
+        $("#image2").css("opacity", "0");
+        $("#image2").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image2").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button2").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button3_click"), "5000");
+        $("#image2").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
 
-	$("#bridesCarousel").swiperight(function() {  
-    $(this).carousel('prev');  
-	  });  
-	$("#bridesCarousel").swipeleft(function() {  
-		$(this).carousel('next');  
-	});  
+    function button3_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image3").css("visibility", "visible");
+        $("#image3").css("opacity", "0");
+        $("#image3").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image3").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button3").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button4_click"), "5000");
+        $("#image3").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
 
-	$("#groomsCarousel").swiperight(function() {  
-    $(this).carousel('prev');  
-	  });  
-	$("#groomsCarousel").swipeleft(function() {  
-		$(this).carousel('next');  
-	}); 
+    function button4_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image4").css("visibility", "visible");
+        $("#image4").css("opacity", "0");
+        $("#image4").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image4").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button4").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button5_click"), "5000");
+        $("#image4").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
 
-	$('#nav-icon3, .nav-section0, .nav-section1, .nav-section2, .nav-section3, .nav-section4').click(function(){
-		$('#nav-icon3').toggleClass('open');
-	});
+        function button5_click(event) {
+        $(".slide").css("visibility", "hidden");
+        $("#image5").css("visibility", "visible");
+        $("#image5").css("opacity", "0");
+        $("#image5").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("ul.buttons li").removeClass("active");
+        $("#image5").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+        $("#button5").addClass("active");
+        clearTimeout(timer);
+        timer = setTimeout(eval("button1_click"), "5000");
+        $("#image5").animate({
+            "opacity": 1
+        }, 900, "linear", null);
+    }
 
+    function OnLoad(event) {
+        clearTimeout(timer);
+        timer = setTimeout(eval("button2_click"), "5000");
+    }
 
-	// ------------------------------
-	// http://twitter.com/mattsince87
-	// ------------------------------
+    OnLoad();
+    //END SLIDESHOW
 
-	function scrollNav() {
-	  $('.nav a').click(function(){
-	    //Toggle Class
-	    $(".active-link").removeClass("active-link");
-	    $(this).closest('li').addClass("active-link");
-	    var theClass = $(this).attr("class");
-	    $('.'+theClass).parent('li').addClass('active-link');
-	    //Animate
-	    $('html, body').stop().animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top - 50
-	    }, 1500);
-	    return false;
-
-	  });
-	  $('.scrollTop a').scrollTop();
-	}
-	scrollNav();
-
-	$("#bs-example-navbar-collapse-1 li a").click(function(event) {
-	  // check if window is small enough so dropdown is created
-		$("#bs-example-navbar-collapse-1").removeClass("in").addClass("collapse");
-	});
-
-  $(document).ready(function() {
-    $(".fancybox").fancybox();
-  });
-
+    // var bob = function(){
+    //     $("#contact_form").on('click', function(){
+    //         alert("it worked");
+    //     });
+    // };
+    // bob();
+    //SUBMIT FORM UNBIND
+    var grayOut = function () {
+        $("#submit_form_button").removeClass("disable");
+        $("#submit_form_button").click(function () {
+            $('#submit_form_button').unbind();
+            setTimeout(function () {
+                grayOut();
+            }, 5000);
+            $("#submit_form_button").addClass("disable");
+        });
+    };
+    grayOut();
+    //END SUBMIT FORM UNBIND
 });
+
