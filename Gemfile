@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 group :development do
      gem 'sqlite3'
      gem 'pry'
-     gem 'puma'
+     gem 'puma', '3.11.4'
 end
 
 group :production do
@@ -22,7 +22,5 @@ group :production do
 	gem 'sendgrid-ruby'
 end
 
-group :doc do
-  gem 'sdoc', require: false
-end
+
 
