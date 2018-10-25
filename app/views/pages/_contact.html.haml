@@ -1,0 +1,66 @@
+#contact#section6
+	.container
+		.row.col-sm-10.col-centered
+			%h1 Contact Us
+			%p Please feel free to reach out, we'd love to hear from you.
+			%h3 Office Location
+			%p 9958 W. Grand Ave Franklin Park, Il 60131
+				
+			%h3 Phone
+			%p 847-288-1788 
+			%h3 Fax
+			%p 847-288-1786 
+			
+			%h3 Office Hours
+			%p Mon-Fri: 8am to 4:30pm 
+			%p 24 Hour Emergency Service
+			%p Ask us for references from your neighborhood. Then let us show you how Freedom Heating & Cooling can exceed your expectations in service and performance. You can count on us now, and for many years to come.
+			
+	.container					
+		.row
+			.col-sm-10.col-centered
+				.row
+					.col-sm-6			
+						%p Barrington: 847-843-7300			
+						%p Belwood: 708-344-2225			
+						%p Chicago: 773-685-5252			
+						%p Downers Grove: 630-769-1939			
+						%p Forest Park: 708-771-1894			
+						%p Franklin Park: 847-451-6100
+
+					.col-sm-6
+						%p Glen Ellyn: 630-790-4565			
+						%p Norridge: 708-453-5323			
+						%p River Grove: 708-456-1860			
+						%p Schiller Park: 847-678-5228			
+						%p Stone Park: 708-338-5000
+
+
+			#workOrder.well
+				%h3 Fill out our form!
+				= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
+					
+					.label First Name:
+					= text_field_tag :first_name, '', :class=>  "field", :name => "user[first_name]"
+					%br
+					.label Last Name:
+					= text_field_tag :last_name, '', :class=>  "field", :name => "user[last_name]"
+					%br
+					.label Email Address:
+					= email_field_tag :email_address, '', :class=>  "field", :name => "user[email_address]"
+					%br
+					.label Phone Number:
+					= phone_field_tag :phone, '', :class=>  "field", :name => "user[phone]"
+					%br
+					.label How can we help you?
+					= text_area_tag :notes, '', :class=>  "field", :name => "user[notes]"
+					%br
+					= submit_tag "Submit form",:class=>  "btn", :id => "submitFormButton"
+
+
+
+
+#footer
+	.container
+		.row
+			%p.col-sm-12
